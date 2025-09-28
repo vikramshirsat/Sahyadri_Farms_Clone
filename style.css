@@ -1,0 +1,1196 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    border: 1px solid red;
+}
+
+#header-navbar {
+    display: none;
+}
+
+#header,
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header div {
+    width: 24%;
+}
+
+#header div img {
+    width: 100%;
+    /* margin-left: 0%; */
+}
+
+#menu {
+    text-align: right;
+    width: 100%;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+}
+
+.herosection {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* full viewport height */
+    overflow: hidden;
+}
+
+/* Video Background */
+.herosection video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ensures video covers entire section */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Overlay Content */
+.herosection-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.herosection-content p:first-child {
+    width: 60px;
+    height: 4px;
+    background-color: white;
+    margin: 0 auto 20px auto;
+}
+
+.herosection-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Subtext */
+.herosection-content p:nth-child(3) {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #A6C639;
+    /* lime green color */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #8bb028;
+}
+
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.welcome-item {
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #EFEFEF;
+    border-radius: 20px;
+}
+
+.welcome-item img {
+    width: 100%;
+
+}
+
+.welcome-item h2 {
+    text-align: center;
+    color: #689B45;
+
+}
+
+.welcome-item h4 {
+    text-align: center;
+    color: #000000;
+
+}
+
+#welcome-uniq {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#welcome-uniq h2 span {
+    padding: 20px 0px;
+    text-align: center;
+    color: #689B45;
+}
+
+.about-sahyadri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-sahyadri-item {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.about-sahyadri-item h2,
+.about-sahyadri-item p,
+.about-sahyadri-item a {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.about-sahyadri-item h2 {
+    text-align: center;
+}
+
+.about-sahyadri-item a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.about-sahyadri-item a button {
+    width: 100%;
+    /* justify-content: center; */
+}
+
+.about-sahyadri-item img {
+    width: 100%;
+}
+
+.infrastructure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.infrastructure-item {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.infrastructure-item img {
+    width: 100%;
+
+}
+
+.infrastructure-item h2,
+.infrastructure-item h3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.infrastructure-item h3 {
+    color: #689B45;
+}
+
+.infrastructure-item h2 {
+    color: black;
+}
+
+.infrastructure-item p {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.infrastructure-item a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.infrastructure-item a button {
+    width: 80%;
+    /* justify-content: center; */
+}
+
+.pillars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #AFC93C;
+}
+
+.pillars-item {
+    width: 100%;
+}
+
+.pillars-item a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.pillars-item a button {
+    background-color: #eff0ee;
+    color: #689B45;
+    width: 80%;
+}
+
+.pillars-item a,
+.pillars-item h4,
+.pillars-item p,
+.pillars div h2 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.pillars-item p {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.pillars-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.licences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #AFC93C; */
+}
+
+.licences-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* background-color: #AFC93C; */
+}
+
+.licences-item a {
+    width: 48%;
+    margin-bottom: 16px;
+}
+
+.licences-item img {
+    width: 100%;
+}
+
+.licences-uniq h2 {
+    width: 60%;
+    margin: 10px auto;
+    /* auto centers the h2 horizontally */
+    text-align: center;
+}
+
+.licences-uniq h2 span {
+    color: #689B45;
+}
+
+.customers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #AFC93C;
+}
+
+.customers-item {
+    width: 100%;
+}
+
+.customers-item img {
+    width: 100%;
+}
+
+.customers-item-uniq {
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+}
+
+.new {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F6F6F6;
+}
+
+.new-item {
+    width: 80%;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.new-item-uniq {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #A6C639;
+    text-align: center;
+    border: none !important;
+}
+
+.new-item-uniq h2 span {
+    color: black;
+    border: none !important;
+}
+
+.new-item img {
+    width: 100%;
+}
+
+.new-item iframe {
+    width: 100%;
+}
+
+.new-item h4,
+.new-item p {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.new-item h4 {
+    text-align: center;
+    color: #8bb028;
+}
+
+/* ==== FOOTER BASE (MOBILE FIRST) ==== */
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.footer-item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Headings & contact */
+.footer-item h4,
+.footer-item-contact {
+    color: #689B45;
+    margin-bottom: 10px;
+}
+
+.footer-item-contact a h4 {
+    color: #689B45;
+    margin-bottom: 10px;
+}
+
+.footer-item-contact a {
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-item-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-item li address {
+    margin-bottom: 10px;
+}
+
+/* Featured links */
+.footer-item-featured a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#footer-item-img a {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#footer-item-img a img {
+    max-width: 50%;
+    height: auto;
+    display: inline-block;
+}
+
+/* Help section */
+.footer-item-help a {
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+/* Farmer app section */
+#footer-farmer-app h4 {
+    color: #AFC93C;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+#footer-farmer-app ul li a {
+    display: inline-block;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
+#footer-farmer-app ul li a img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer bottom links */
+#footer-uniq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-uniq-link a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer-uniq-icons a img {
+    background-color: #AFC93A;
+    border-radius: 40%;
+}
+
+/* Footer background image */
+#footer-img img {
+    width: 100%;
+}
+
+p {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    /* normal */
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    /* bold */
+    font-style: normal;
+}
+
+#our_story-herosection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    position: relative;
+}
+
+#our_story-herosection-uniq img {
+    width: 100%;
+}
+
+#our_story-herosection-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* center text */
+    color: white;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    max-width: 80%;
+    /* background: rgba(0, 0, 0, 0.4); */
+}
+
+/* ===== SEEDS SECTION ===== */
+#seeds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+    background-color: #F6F6F6;
+    gap: 20px;
+}
+
+.seeds-item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.seeds-item h2 {
+    color: #689B45;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seeds-item p {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.seeds-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+#crop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+    background-color: #F6F6F6;
+    gap: 20px;
+}
+
+.crop-item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.crop-item h2 {
+    color: #689B45;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.crop-item p {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.crop-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+#core_crops {
+    width: 100%;
+    /* max-width: 800px; */
+    margin-top: 80px;
+}
+
+.core_crops-item {
+    position: relative;
+}
+
+.core_crops-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* border-radius: 15px; */
+}
+
+.core_crops-txt {
+    position: absolute;
+    bottom: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#grapes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 5%;
+    background-color: #F6F6F6;
+    gap: 20px;
+}
+
+.grapes-item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.grapes-item-uniq {
+    width: 100%;
+}
+
+.grapes-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    /* display: block; */
+}
+
+#fruits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 5%;
+    /* background-color: #F6F6F6; */
+    background-color: #AFC93A;
+}
+
+.fruit-item {
+    width: 100%;
+    /* mobile: 1 per row */
+}
+
+.fruit-item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.fruit-item h4 {
+    text-align: center;
+    color: darkgreen;
+}
+
+/* food safety standards */
+
+#food_safety_standards-main {
+    background-color: #EAEBE7;
+}
+
+#food_safety_standards {
+    display: none;
+}
+
+/* food_safety-practice */
+#food_safety-practice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    align-items: center;
+}
+
+#food_safety-practice-item h2 {
+    text-align: center;
+    color: #8bb028;
+    margin-top: 30px;
+}
+
+#food_safety-practice-item p {
+    text-align: justify;
+    color: black;
+    margin-top: 30px;
+}
+
+.food_safety-practice-item {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.food_safety-practice-item img {
+    width: 100%;
+}
+
+#food_safety-quality {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin-top: 80px; */
+    align-items: center;
+}
+
+#food_safety-quality-txt {
+    text-align: center;
+    color: #8bb028;
+    margin-top: 30px;
+}
+
+#food_safety-quality-img {
+    width: 100%;
+}
+
+#food_safety-quality-img img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#food_safety-quality-uniq a button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* food_safety_standards-license */
+#food_safety_standards-license {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin-top: 80px; */
+    align-items: center;
+}
+
+#food_safety_standards-license-uniq h2 {
+    text-align: center;
+    color: #8bb028;
+    margin-top: 30px;
+}
+
+#food_safety_standards-license-uniq p {
+    text-align: justify;
+    color: black;
+    margin-top: 30px;
+    margin: 10px 10px;
+}
+
+#food_safety_standards-license-uniq h3 {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.food_safety_standards-license-item {
+    display: flex;
+    flex-direction: column;
+    /* stack logo + text */
+    text-align: center;
+    background: #e8ece5;
+    border-radius: 20px;
+    padding: 16px;
+    margin-bottom: 16px;
+    gap: 14px;
+}
+
+/* Logo section */
+.license-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dde6d5;
+    border-radius: 20px 20px 0 0;
+    padding: 12px;
+}
+
+.license-img img {
+    max-height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Text section */
+.license-txt h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.license-txt h4 {
+    margin: 6px 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.license-txt p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.license-txt-uniq {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between icon & text */
+    margin: 6px 0;
+}
+
+.license-txt-uniq-img {
+    flex: 0 0 40px;
+    /* fixed icon box, always same size */
+}
+
+.license-txt-uniq-img img {
+    width: 100%;
+    height: auto;
+    max-width: 32px;
+}
+
+.license-txt-uniq-txt {
+    flex: 1;
+    /* text takes remaining space */
+}
+
+.license-txt-uniq-txt p {
+    margin: 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #d4dfc4;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    #header div {
+        width: 15%;
+    }
+
+    #welcome-uniq {
+        width: 100%;
+    }
+
+    .welcome-item {
+        width: 30%;
+    }
+
+    .about-sahyadri-item a button {
+        width: 50%;
+
+    }
+
+    .infrastructure-item a button {
+        width: 40%;
+
+    }
+
+    #pillars-uniq {
+        width: 100%;
+    }
+
+    .pillars-item {
+        width: 47%;
+    }
+
+    .pillars-item a button {
+        width: 40%;
+    }
+
+    .customers-item-uniq {
+        width: 100%;
+    }
+
+    .customers-item {
+        width: 47%;
+    }
+
+    .new-item-uniq {
+        width: 100%;
+    }
+
+    .new-item {
+        width: 45%;
+    }
+
+    .footer-item {
+        width: 23%;
+        text-decoration: none;
+
+    }
+
+    #footer-uniq,
+    #footer-img {
+        width: 100%;
+    }
+
+    #footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .grapes-item-uniq {
+        width: 100%;
+    }
+
+    .grapes-item {
+        width: 47%;
+    }
+
+    .fruit-item {
+        width: 48%;
+    }
+
+    #food_safety_standards {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin-top: 100px;
+        height: 450px;
+    }
+
+    .food_safety_standards-img {
+        width: 100%;
+        height: 100%;
+        /* Ensures container fills the height of the parent section */
+        overflow: hidden;
+    }
+
+    .food_safety_standards-img img {
+        width: 100%;
+        height: 100%;
+        /* Ensures image covers the full, reduced height of its container */
+        object-fit: cover;
+        display: block;
+    }
+
+    .food_safety_standards-txt {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        width: 60%;
+        height: 60%;
+        z-index: 10;
+
+        padding: 30px;
+        color: #171414;
+        background-color: white;
+        border-radius: 150px 0px 150px 150px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .food_safety_standards-txt h2 {
+        font-size: 2.2em;
+        color: #4CAF50;
+        margin-bottom: 15px;
+    }
+
+    .food_safety_standards-txt p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+    .food_safety-practice-item {
+    width: 47%;
+}
+
+#food_safety-quality-uniq{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#food_safety-quality-uniq a button{
+    width: 100%;
+}
+
+  #food_safety_standards-license {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .food_safety_standards-license-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .license-img {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: none;
+  }
+
+  .license-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    #header {
+        justify-content: flex-start;
+        padding: 5px 5%;
+        /* smaller top/bottom padding */
+        height: 60px;
+        /* controls overall height */
+    }
+
+    #header-img {
+        width: 8%;
+        /* smaller logo */
+    }
+
+    #header-navbar {
+        display: block;
+        width: auto;
+        margin-left: auto;
+    }
+
+    #header-navbar ul {
+        display: flex;
+        gap: 20px;
+        /* less gap between links */
+        list-style: none;
+    }
+
+    #header-navbar ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 0.9rem;
+        /* smaller font */
+        transition: color 0.3s;
+    }
+
+    #header-navbar ul li a:hover {
+        color: #689B45;
+    }
+
+    #menu {
+        display: none;
+
+    }
+
+    #header-img img {
+        max-height: 50px;
+        /* controls logo height */
+        width: auto;
+        /* keep aspect ratio */
+    }
+
+    .about-sahyadri-item {
+        width: 47%;
+    }
+
+    .about-sahyadri-item a button {
+        width: 20%;
+
+    }
+
+    .infrastructure-item {
+        width: 47%;
+    }
+
+    .infrastructure-item a button {
+        width: 20%;
+
+    }
+
+    .pillars-item {
+        width: 23%;
+    }
+
+    .pillars-item a button {
+        width: 50%;
+    }
+
+    .licences-uniq {
+        width: 100%;
+    }
+
+    .licences-item a {
+        width: 20%;
+    }
+
+    .customers-item-uniq {
+        width: 100%;
+    }
+
+    .customers-item {
+        width: 23%;
+    }
+
+    .new-item-uniq {
+        width: 100%;
+    }
+
+    .new-item {
+        width: 33%;
+        /* height: auto; */
+    }
+
+    .grapes-item-uniq {
+        width: 100%;
+    }
+
+    .grapes-item {
+        width: 23%;
+    }
+
+    .fruit-item {
+        width: 30%;
+    }
+
+    .food_safety-practice-item {
+    width: 23%;
+}
+}
